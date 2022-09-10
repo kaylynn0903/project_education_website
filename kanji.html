@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="這是一個讓香港中小學生能夠簡單認識日語歷史的網站"
+    />
+    <meta name="author" content="Ng Hoi Lam, Kaylyn" />
+    <meta
+      name="keywords"
+      content="日語, 歷史, 日語歷史, 漢字, 平假名, 片假名, Japanese, Language, Beginner, JLPT, History, Kanji, Hiragana, Katakana"
+    />
+    <title>認識漢字</title>
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/kanji.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header_img">
+      <div class="header_title">
+        <h1>認識日語歷史</h1>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+        </li>
+        <li>
+          <a href="overview.html"
+            ><i class="fa-solid fa-book"></i>日語歷史由來</a
+          >
+        </li>
+        <li>
+          <a href="manyougana.html"><i class="fa-solid fa-star"></i>日語假名</a>
+          <ul class="dropdown">
+            <li><a href="manyougana.html">萬葉假名</a></li>
+            <li><a href="hiragana.html">平假名</a></li>
+            <li><a href="katakana.html">片假名</a></li>
+          </ul>
+        </li>
+        <li id="current">
+          <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+        </li>
+        <li>
+          <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+        </li>
+        <li>
+          <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      id="navbar_button_mobile"
+      class="navbar_button_mobile"
+      onclick="onclickNavbarButton()"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div
+      id="navbar_button_close_mobile"
+      class="navbar_button_close_mobile"
+      onclick="onclickNavbarButtonClose()"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="navbar_mobile" class="navbar_mobile">
+      <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+      <a href="overview.html"><i class="fa-solid fa-book"></i>日語歷史由來</a>
+      <a href="manyougana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 萬葉假名</a
+      >
+      <a href="hiragana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 平假名</a
+      >
+      <a href="katakana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 片假名</a
+      >
+      <a id="current" href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+      <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+      <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+    </div>
+    <div class="main_container">
+      <div class="content">
+        <h2>漢字</h2>
+        <p>
+          在日本的漢字可分為兩大類：音讀(音読み)、訓讀(訓読み)。音讀是根據漢字的讀音用日語去發音，而訓讀是保留漢字的意思但用日語已有的文字發音。
+        </p>
+        <img class="line" src="img/line_spring4.png" alt="divider line" />
+        <h2 id="onyomi">音讀</h2>
+        <p>
+          音讀主要分為三大讀音：吳音、漢音、唐音。而漢字分別在吳音、漢音、唐音都擁有不同的讀音，以至日語都保留了這三個不同的讀音去演變成現在的音讀。
+        </p>
+        <table class="reference_table four_column">
+          <tr>
+            <th>漢字</th>
+            <th>吳音</th>
+            <th>漢音</th>
+            <th>唐音</th>
+          </tr>
+          <tr>
+            <td>行</td>
+            <td>ぎょう</td>
+            <td>こう</td>
+            <td>あん</td>
+          </tr>
+          <tr>
+            <td>明</td>
+            <td>みょう</td>
+            <td>めい</td>
+            <td>みん</td>
+          </tr>
+          <tr>
+            <td>頭</td>
+            <td>ず</td>
+            <td>とう</td>
+            <td>じゅう</td>
+          </tr>
+        </table>
+        <p>
+          在以上表格中我們可以得知即使是同一個漢字在吳音、漢音、唐音的發音都不同，因此在不同的詞語中所取用的漢字讀音也不一樣。表格中也提及過「行」，在吳音「行事」的讀音是「ぎょうじ」，漢音「行動」的讀音是「こうどう」，而唐音「行脚」的讀音是「あんぎゃ」。
+        </p>
+        <img class="line" src="img/line_spring4.png" alt="divider line" />
+        <p>
+          除此之外，音讀是保留了漢字的意思亦以漢字的發音為基礎的一種讀音。我們對這些漢字的讀音和意思都相對熟悉。
+        </p>
+        <table class="reference_table">
+          <tr>
+            <th>中文</th>
+            <th>漢字</th>
+            <th>日語</th>
+          </tr>
+          <tr>
+            <td>簡單</td>
+            <td>簡単</td>
+            <td>かんたん</td>
+          </tr>
+          <tr>
+            <td>戀愛</td>
+            <td>恋愛</td>
+            <td>れんあい</td>
+          </tr>
+          <tr>
+            <td>練習</td>
+            <td>練習</td>
+            <td>れんしゅう</td>
+          </tr>
+          <tr>
+            <td>天氣</td>
+            <td>天気</td>
+            <td>てんき</td>
+          </tr>
+          <tr>
+            <td>電車</td>
+            <td>電車</td>
+            <td>でんしゃ</td>
+          </tr>
+        </table>
+        <img class="line" src="img/line_spring4.png" alt="divider line" />
+        <h2 id="kunyomi">訓讀</h2>
+        <p>
+          訓讀是日語對應漢字的一種讀音，亦借了漢字的字形和字義去表達意思。即使漢字與中文寫法接近或相同，但讀音卻完全不一樣。
+        </p>
+        <table class="reference_table">
+          <tr>
+            <th>中文</th>
+            <th>漢字</th>
+            <th>日語</th>
+          </tr>
+          <tr>
+            <td>今日</td>
+            <td>今日</td>
+            <td>きょう</td>
+          </tr>
+          <tr>
+            <td>車</td>
+            <td>車</td>
+            <td>くるま</td>
+          </tr>
+          <tr>
+            <td>海豚</td>
+            <td>海豚</td>
+            <td>いるか</td>
+          </tr>
+          <tr>
+            <td>頭</td>
+            <td>頭</td>
+            <td>あたま</td>
+          </tr>
+          <tr>
+            <td>大人</td>
+            <td>大人</td>
+            <td>おとな</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <a id="back_to_top" class="to_top_container" href="#top">
+      <i class="fa-solid fa-caret-up"></i>
+      <div class="text">置頂</div>
+    </a>
+    <footer class="footer">
+      <p>Ng Hoi Lam Kaylyn &copy; <span id="year"></span></p>
+    </footer>
+
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/kanji.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+.form {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+form > div > label {
+  display: flex;
+  align-items: center;
+}
+
+.question_img {
+  height: 28px;
+  padding-right: 3px;
+}
+
+.buttonarea {
+  text-align: center;
+}
+
+.buttonarea .btn_submit {
+  margin-right: 10px;
+}
+
+.correct {
+  display: none;
+  padding-left: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+.incorrect {
+  display: none;
+  padding-left: 10px;
+  font-weight: bold;
+  color: red;
+}
+
+.answer {
+  margin: 10px 0 20px 0;
+  padding: 5px;
+  border: 1px dashed green;
+  color: green;
+  text-decoration: underline;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="這是一個讓香港中小學生能夠簡單認識日語歷史的網站"
+    />
+    <meta name="author" content="Ng Hoi Lam, Kaylyn" />
+    <meta
+      name="keywords"
+      content="日語, 歷史, 日語歷史, 漢字, 平假名, 片假名, Japanese, Language, Beginner, JLPT, History, Kanji, Hiragana, Katakana"
+    />
+    <title>相關連結</title>
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/resource.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header_img">
+      <div class="header_title">
+        <h1>認識日語歷史</h1>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+        </li>
+        <li>
+          <a href="overview.html"
+            ><i class="fa-solid fa-book"></i>日語歷史由來</a
+          >
+        </li>
+        <li>
+          <a href="manyougana.html"><i class="fa-solid fa-star"></i>日語假名</a>
+          <ul class="dropdown">
+            <li><a href="manyougana.html">萬葉假名</a></li>
+            <li><a href="hiragana.html">平假名</a></li>
+            <li><a href="katakana.html">片假名</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+        </li>
+        <li>
+          <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+        </li>
+        <li id="current">
+          <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      id="navbar_button_mobile"
+      class="navbar_button_mobile"
+      onclick="onclickNavbarButton()"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div
+      id="navbar_button_close_mobile"
+      class="navbar_button_close_mobile"
+      onclick="onclickNavbarButtonClose()"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="navbar_mobile" class="navbar_mobile">
+      <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+      <a href="overview.html"><i class="fa-solid fa-book"></i>日語歷史由來</a>
+      <a href="manyougana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 萬葉假名</a
+      >
+      <a href="hiragana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 平假名</a
+      >
+      <a href="katakana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 片假名</a
+      >
+      <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+      <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+      <a id="current" href="resource.html"
+        ><i class="fa-solid fa-link"></i>相關連結</a
+      >
+    </div>
+    <div class="main_container">
+      <div class="content_container">
+        <div class="content">
+          <h2>平假名</h2>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/LrXHizFaol0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="content">
+          <h2>片假名</h2>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/FwtGcYfdbek"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="content">
+          <h2>日文漢字和假名的由來 (一)</h2>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/QWGUclg-Q2M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="content">
+          <h2>日文漢字和假名的由來 (二)</h2>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/HWY2G_OKB_U"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="back_to_top" class="to_top_container" href="#top">
+      <i class="fa-solid fa-caret-up"></i>
+      <div class="text">置頂</div>
+    </a>
+    <footer class="footer">
+      <p>Ng Hoi Lam Kaylyn &copy; <span id="year"></span></p>
+    </footer>
+
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/resource.js"></script>
+  </body>
+</html>

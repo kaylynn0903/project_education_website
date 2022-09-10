@@ -1,0 +1,56 @@
+.overview {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.definition_list dt {
+  font-weight: bold;
+}
+
+.button_bar {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+.button_bar > div {
+  margin-right: 15px;
+}
+.button_bar > a {
+  display: block;
+  margin-right: 10px;
+  padding: 8px;
+  font-weight: bold;
+  background-color: #d5e0c7;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.button_bar > a:hover {
+  text-decoration: underline;
+}
+.button_bar > a:visited {
+  color: inherit;
+}
+
+.paragraph {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.main_container a {
+  color: #078d96 !important;
+}
+
+@media (max-width: 768px) {
+  .button_bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .button_bar > div {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .button_bar > a {
+    margin-bottom: 10px;
+  }
+}

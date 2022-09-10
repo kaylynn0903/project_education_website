@@ -1,0 +1,106 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.level {
+  display: flex;
+}
+
+.level > a {
+  flex: 1 1;
+}
+
+.level > a:first-child {
+  margin-right: 45px;
+}
+
+.level h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.basic {
+  position: relative;
+  background-color: #a2b38b;
+  height: 250px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 5px solid #a2b38b;
+}
+
+.basic:hover {
+  background-color: #d5e0c7;
+  cursor: pointer;
+  animation: shine 1s infinite;
+}
+
+.quiz_img_left {
+  position: absolute;
+  height: 80px;
+}
+
+.boy_img {
+  bottom: 10px;
+  right: 10px;
+}
+
+.girl_img {
+  bottom: 10px;
+  right: 50px;
+}
+
+.hard {
+  position: relative;
+  background-color: #a2b38b;
+  height: 250px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 5px solid #a2b38b;
+}
+
+.hard:hover {
+  background-color: #d5e0c7;
+  cursor: pointer;
+  animation: shine 1s infinite;
+}
+
+.quiz_img_right {
+  position: absolute;
+  height: 100px;
+}
+
+p {
+  text-align: center;
+  padding: 0 15px;
+}
+
+@keyframes shine {
+  0% {
+    border-color: #d5e0c7;
+  }
+  50% {
+    border-color: #078d96;
+  }
+  100% {
+    border-color: #d5e0c7;
+  }
+}
+
+@media (max-width: 768px) {
+  .level {
+    flex-direction: column;
+  }
+
+  .level > div {
+    width: auto;
+    margin: 0 0 20px 0;
+  }
+
+  .level > a:first-child {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}

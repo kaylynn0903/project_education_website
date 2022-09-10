@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="這是一個讓香港中小學生能夠簡單認識日語歷史的網站"
+    />
+    <meta name="author" content="Ng Hoi Lam, Kaylyn" />
+    <meta
+      name="keywords"
+      content="日語, 歷史, 日語歷史, 漢字, 平假名, 片假名, Japanese, Language, Beginner, JLPT, History, Kanji, Hiragana, Katakana"
+    />
+    <title>日語歷史由來</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+    <link
+      media="screen"
+      type="text/css"
+      rel="stylesheet"
+      href="css/global.css"
+    />
+    <link
+      media="screen"
+      type="text/css"
+      rel="stylesheet"
+      href="css/overview.css"
+    />
+    <link media="print" rel="stylesheet" href="css/print.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header_img">
+      <div class="header_title">
+        <h1>認識日語歷史</h1>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+        </li>
+        <li id="current">
+          <a href="overview.html"
+            ><i class="fa-solid fa-book"></i>日語歷史由來</a
+          >
+        </li>
+        <li>
+          <a href="manyougana.html"><i class="fa-solid fa-star"></i>日語假名</a>
+          <ul class="dropdown">
+            <li><a href="manyougana.html">萬葉假名</a></li>
+            <li><a href="hiragana.html">平假名</a></li>
+            <li><a href="katakana.html">片假名</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+        </li>
+        <li>
+          <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+        </li>
+        <li>
+          <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      id="navbar_button_mobile"
+      class="navbar_button_mobile"
+      onclick="onclickNavbarButton()"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div
+      id="navbar_button_close_mobile"
+      class="navbar_button_close_mobile"
+      onclick="onclickNavbarButtonClose()"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="navbar_mobile" class="navbar_mobile">
+      <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+      <a id="current" href="overview.html"
+        ><i class="fa-solid fa-book"></i>日語歷史由來</a
+      >
+      <a href="manyougana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 萬葉假名</a
+      >
+      <a href="hiragana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 平假名</a
+      >
+      <a href="katakana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 片假名</a
+      >
+      <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+      <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+      <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+    </div>
+    <div class="main_container">
+      <div class="overview">
+        <h2>日語歷史由來</h2>
+        <p>
+          日本語，是主要由日本列島流行使用的語言。為甚麼這樣說呢？原來，日本並未有以法律明確規定日語為官方語言，所以日本是沒有法定語言的。
+        </p>
+        <p>
+          「日語」，一般是指東京的山手地區使用的山手方言「山の手言葉」為基礎的日語現代標準語。
+        </p>
+        <img class="line" src="img/line_spring4.png" alt="divider line" />
+        <h3>不同時期的日語</h3>
+        <dl class="definition_list">
+          <dt>上古日語</dt>
+          <dd>6世紀至9世紀</dd>
+          <dt>中古日語</dt>
+          <dd>9世紀後半葉至12世紀的平安時代中晩期（斷代有爭議）</dd>
+          <dt>中世日語</dt>
+          <dd>12世紀至16世紀</dd>
+          <dt>近世日語</dt>
+          <dd>17世紀初至19世紀</dd>
+          <dt>現代日語</dt>
+          <dd>19世紀至現在</dd>
+        </dl>
+      </div>
+
+      <div class="button_bar">
+        <div>快速導覽：</div>
+        <a href="#para1">上古日語</a>
+        <a href="#para2">中古日語</a>
+        <a href="#para3">中世日語</a>
+        <a href="#para4">近世日語</a>
+        <a href="#para5">現代日語</a>
+      </div>
+      <div id="para1" class="paragraph">
+        <h2>上古日語</h2>
+        <p>上古日語是指奈良時代及以前使用的古日本語。</p>
+        <p>
+          在這之前，日本一直以來的欠缺書寫系統，所以這時期以前的日本狀況，絕大多數只能從古中國的記事文獻參考。當時日本積極與中國進行文化交流，令<a
+            href="kanji.html"
+            >漢字</a
+          >書寫系統帶入日本。日本得以掌握以漢字書寫記錄歷史。
+        </p>
+        <p>
+          上古日語的分期難以考究，因為這是日文書寫系統發展的最初階段，以前的資料都欠缺文獻記錄。最初階段的考究甚至只能從中國古代的記事找到蛛絲馬跡，例如《三國志．魏志》中找到少量人名和地名的日語詞彙。而現今找到最早期的日本文獻，就是公元712年的《古事記》，所以上古日語的開始被定為712年。日文書寫系統的雛型，就是由這時期開始。《古事記》、《萬葉集》的文法發展成日本最初的書寫系統——<a
+            href="manyougana.html"
+            >萬葉假名</a
+          >。
+        </p>
+        <a
+          href="img/kojiki.png"
+          data-lightbox="overview-gallery"
+          data-title="古事記"
+        >
+          <img id="image_2" src="img/kojiki.png" class="image" alt="古事記" />
+          <label for="image_2">古事記</label>
+        </a>
+      </div>
+      <div id="para2" class="paragraph">
+        <h2>中古日語</h2>
+        <p>
+          中古日語盛行於日本平安時代中晩期。現代日本中等教育體系所稱的文語(ぶんご
+          )就是以中古日語為標準。
+        </p>
+        <p>
+          在這時期，由於遣唐使的實質廢止和日本國風文化的獨自發展，在日語表記上也出現了兩種新的表音符號：<a
+            href="hiragana.html"
+            >平假名</a
+          >和<a href="katakana.html">片假名</a
+          >片假名。這種發展簡化了書寫工作，在很大程度上推進了假名文學的新時代。
+        </p>
+        <p>
+          日本文學因假名的改良得到高速發展，《竹取物語》、《源氏物語》、《伊勢物語》等名著就是由此時期撰寫。
+        </p>
+        <a
+          href="img/genji_kawachibon.jpg"
+          data-lightbox="overview-gallery"
+          data-title="源氏物語"
+        >
+          <img
+            id="image_3"
+            src="img/genji_kawachibon.jpg"
+            class="image"
+            alt="源氏物語"
+          />
+          <label for="image_3">源氏物語</label>
+        </a>
+      </div>
+      <div id="para3" class="paragraph">
+        <h2>中世日語</h2>
+        <p></p>
+        <p>
+          中世日語的時期正正是平安時代貴族社會向武士封建社會過渡的時期。在這個時期，絕大多數古代日語中的特徵都已丟失，更接近現在的日語。
+        </p>
+        <p>
+          這時期因佛教的興起使日本產生了諸多佛教宗派，大量佛教文獻的編譯與傳播使日本當時識字率有顯著的提升。
+        </p>
+        <p>
+          16世紀中葡萄牙傳教士抵達日本，對日本語帶來革命性改變，大量外來葡萄牙語進入日語系統。為傳播天主教，葡萄牙傳教士學習日語及編寫了數部語法書如《日本大文典》和《日葡辭書》。
+        </p>
+        <a
+          href="img/kyoto_ji.jpg"
+          data-lightbox="overview-gallery"
+          data-title="日本佛教著名建築——清水寺"
+        >
+          <img
+            id="image_4"
+            src="img/kyoto_ji.jpg"
+            class="image"
+            alt="日本佛教著名建築——清水寺"
+          />
+          <label for="image_4">日本佛教著名建築——清水寺</label>
+        </a>
+      </div>
+      <div id="para4" class="paragraph">
+        <h2>近世日語</h2>
+        <p>
+          從17世紀起在德川幕府的統治下，當時首都京都所使用的上方方言（上方語）直到江戶時代早期都是最有影響力的標準方言，主導近世日語的發展。德川幕府治下戰爭較少，武士階級衰落，經濟發達也促進了文化繁榮，町人文化、出版文化出現並壯大量新興的藝術與文學的產生。
+        </p>
+        <p>
+          現在日語已經難以找到近世日語的蹤跡，現在近世日語主要是作為學術研究之用。《和訓栞》、《雅言集覧》、《俚言集覧》等明治時期的日語辭書收錄了諸多近世日語詞彙與語法，是研究近世日語的重要的工具書籍。
+        </p>
+        <a
+          href="img/kyoto_view.jpg"
+          data-lightbox="overview-gallery"
+          data-title="京都"
+        >
+          <img id="image_5" src="img/kyoto_view.jpg" class="image" alt="京都" />
+          <label for="image_5">京都</label>
+        </a>
+      </div>
+      <div id="para5" class="paragraph">
+        <h2>現代日語</h2>
+        <p>
+          到了明治時期的日本，門戶向外開放令大量不同的文化交流進入日本。在這時期，日語很容易不斷變化。為了好讓國內國外人們的交流，當時明治政府以首都江戶（即現今東京）的山手地區使用的山手方言「山の手言葉」作為日本標準語。現今，日本語都是以日本標準語作為系統教授日本語。
+        </p>
+        <a
+          href="img/tokyo.jpg"
+          data-lightbox="overview-gallery"
+          data-title="東京"
+        >
+          <img id="image_6" src="img/tokyo.jpg" class="image" alt="東京" />
+          <label for="image_6">東京</label>
+        </a>
+      </div>
+    </div>
+    <a id="back_to_top" class="to_top_container" href="#top">
+      <i class="fa-solid fa-caret-up"></i>
+      <div class="text">置頂</div>
+    </a>
+    <footer class="footer">
+      <p>Ng Hoi Lam Kaylyn &copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/overview.js"></script>
+  </body>
+</html>

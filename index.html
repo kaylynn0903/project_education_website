@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="這是一個讓香港中小學生能夠簡單認識日語歷史的網站"
+    />
+    <meta name="author" content="Ng Hoi Lam, Kaylyn" />
+    <meta
+      name="keywords"
+      content="日語, 歷史, 日語歷史, 漢字, 平假名, 片假名, Japanese, Language, Beginner, JLPT, History, Kanji, Hiragana, Katakana"
+    />
+    <title>認識日語歷史</title>
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="top" class="header_img">
+      <div class="header_title">
+        <h1>認識日語歷史</h1>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li id="current">
+          <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+        </li>
+        <li>
+          <a href="overview.html"
+            ><i class="fa-solid fa-book"></i>日語歷史由來</a
+          >
+        </li>
+        <li>
+          <a href="manyougana.html"><i class="fa-solid fa-star"></i>日語假名</a>
+          <ul class="dropdown">
+            <li><a href="manyougana.html">萬葉假名</a></li>
+            <li><a href="hiragana.html">平假名</a></li>
+            <li><a href="katakana.html">片假名</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+        </li>
+        <li>
+          <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+        </li>
+        <li>
+          <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      id="navbar_button_mobile"
+      class="navbar_button_mobile"
+      onclick="onclickNavbarButton()"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div
+      id="navbar_button_close_mobile"
+      class="navbar_button_close_mobile"
+      onclick="onclickNavbarButtonClose()"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="navbar_mobile" class="navbar_mobile">
+      <a id="current" href="index.html"
+        ><i class="fa-solid fa-house-chimney"></i>主頁</a
+      >
+      <a href="overview.html"><i class="fa-solid fa-book"></i>日語歷史由來</a>
+      <a href="manyougana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 萬葉假名</a
+      >
+      <a href="hiragana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 平假名</a
+      >
+      <a href="katakana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 片假名</a
+      >
+      <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+      <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+      <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+    </div>
+    <div class="main_container">
+      <div class="description">
+        <h2>你對日語有多少認識?</h2>
+        <ol class="question">
+          <li>為什麼日語也有中文？</li>
+          <li>為什麼日語有些文字的發音與中文發音相似？</li>
+          <li>為什麼日語五十音的寫法是這樣的？</li>
+        </ol>
+        <img
+          class="question_img"
+          src="img/girl_question.png"
+          alt="girl have question"
+        />
+      </div>
+
+      <div class="features">
+        <a href="manyougana.html" class="card manyougana">
+          <h2 class="title">萬葉假名</h2>
+          <p class="text-area">
+            名字與日本名書《萬葉集》十分相似，難道有甚麼關係？
+          </p>
+          <div class="redirect-icon">
+            <i class="fa-solid fa-angles-right"></i>
+          </div>
+        </a>
+        <a href="hiragana.html" class="card hiragana">
+          <h2 class="title">平假名</h2>
+          <p class="text-area">為何平假名會稱為「女手」？</p>
+          <div class="redirect-icon">
+            <i class="fa-solid fa-angles-right"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="features">
+        <a href="katakana.html" class="card katakana">
+          <h2 class="title">片假名</h2>
+          <p class="text-area">有平假名又為甚麼有片假名啊？</p>
+          <div class="redirect-icon">
+            <i class="fa-solid fa-angles-right"></i>
+          </div>
+        </a>
+        <a href="kanji.html" class="card kanji">
+          <h2 class="title">漢字</h2>
+          <p class="text-area">
+            漢字是中文的漢字吧，與我們學習的漢字有沒有分別呢？
+          </p>
+          <div class="redirect-icon">
+            <i class="fa-solid fa-angles-right"></i>
+          </div>
+        </a>
+      </div>
+      <div class="about_us">
+        <h2>關於我們</h2>
+        <p>
+          這是一個網站可以讓香港的中小學生能夠簡單地認識日語歷史和由來。很多時候我們都會在食物包裝、產品廣告，以至日本劇集上接觸到日語。日語除了基本的五十音外，還有漢字，即使我們從未學習過日語也能從字裡行間猜測文字的意思。
+        </p>
+        <p>
+          而為什麼日語的漢字與我們所認識的中文那麼相似呢？為什麼在日語中，相同意思的漢字卻擁有不同的讀音呢？五十音的演變過程又是怎樣呢？
+        </p>
+        <p>
+          希望可以透過這個網讓能引起香港中小學生對日語和日語歷史的興趣，亦可以輕鬆愉快地學習。
+        </p>
+      </div>
+    </div>
+    <a id="back_to_top" class="to_top_container" href="#top">
+      <i class="fa-solid fa-caret-up"></i>
+      <div class="text">置頂</div>
+    </a>
+    <footer class="footer">
+      <p>Ng Hoi Lam Kaylyn &copy; <span id="year"></span></p>
+    </footer>
+
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

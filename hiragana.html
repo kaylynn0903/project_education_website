@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="這是一個讓香港中小學生能夠簡單認識日語歷史的網站"
+    />
+    <meta name="author" content="Ng Hoi Lam, Kaylyn" />
+    <meta
+      name="keywords"
+      content="日語, 歷史, 日語歷史, 漢字, 平假名, 片假名, Japanese, Language, Beginner, JLPT, History, Kanji, Hiragana, Katakana"
+    />
+    <title>認識平假名</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/hiragana.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header_img">
+      <div class="header_title">
+        <h1>認識日語歷史</h1>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+        </li>
+        <li>
+          <a href="overview.html"
+            ><i class="fa-solid fa-book"></i>日語歷史由來</a
+          >
+        </li>
+        <li id="current">
+          <a href="manyougana.html"><i class="fa-solid fa-star"></i>日語假名</a>
+          <ul class="dropdown">
+            <li><a href="manyougana.html">萬葉假名</a></li>
+            <li><a href="hiragana.html">平假名</a></li>
+            <li><a href="katakana.html">片假名</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+        </li>
+        <li>
+          <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+        </li>
+        <li>
+          <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      id="navbar_button_mobile"
+      class="navbar_button_mobile"
+      onclick="onclickNavbarButton()"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div
+      id="navbar_button_close_mobile"
+      class="navbar_button_close_mobile"
+      onclick="onclickNavbarButtonClose()"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="navbar_mobile" class="navbar_mobile">
+      <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+      <a href="overview.html"><i class="fa-solid fa-book"></i>日語歷史由來</a>
+      <a href="manyougana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 萬葉假名</a
+      >
+      <a id="current" href="hiragana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 平假名</a
+      >
+      <a href="katakana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 片假名</a
+      >
+      <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+      <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+      <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+    </div>
+    <div class="main_container">
+      <div class="content">
+        <h2>平假名</h2>
+        <a
+          href="img/hinagana_full.jpg"
+          data-lightbox="hiragana-gallery"
+          data-title="平假名"
+        >
+          <img
+            id="image_1"
+            src="img/hinagana_full.jpg"
+            class="image"
+            alt="平假名"
+          />
+          <label for="image_1">平假名</label>
+        </a>
+        <div class="hiragana">
+          <p>
+            有了<a href="manyougana.html">萬葉假名</a
+            >，為甚麼又會冒出一種新的假名——平假名呢？由於<a href="kanji.html"
+              >漢字</a
+            >給人有一種很硬朗的感覺，而古代男性幾乎都在用漢字，女性有別於男性不寫正體漢字，從而慢慢發展出一套漢字草書的寫法。經過不同的改良及簡化筆劃，逐漸形成一套看起來優雅的書法，深受貴族女性的喜愛，這就是平假名。正因這種文字有其背景，所以在當時被稱為「女手」，相反漢字就被稱為「男手」。
+          </p>
+          <p>
+            早期古日本時男性不會學習寫平假名，而在漢字注釋亦只使用片假名，平假名在當時的地位不高。直至《古今和歌集》以平假名起序，才開始擁有文學的價值。加上以平假名撰寫的文學作品得以流行，使人們開始重視平假名，漸漸取代了萬葉假名。
+          </p>
+          <p>
+            現在我們認識的平假名，是由明治政府以五十音定下來。在現代日語，平假名已經完全融入了其中。
+          </p>
+        </div>
+        <img class="line" src="img/line_spring4.png" alt="divider line" />
+        <table class="hiragana_table">
+          <caption class="table_title">
+            平假名一覽
+          </caption>
+          <tbody>
+            <tr>
+              <th></th>
+              <th>あ段</th>
+              <th>い段</th>
+              <th>う段</th>
+              <th>え段</th>
+              <th>お段</th>
+            </tr>
+            <tr>
+              <th rowspan="2">あ行</th>
+              <th>あ</th>
+              <th>い</th>
+              <th>う</th>
+              <th>え</th>
+              <th>お</th>
+            </tr>
+            <tr>
+              <td>安</td>
+              <td>以</td>
+              <td>宇</td>
+              <td>衣</td>
+              <td>於</td>
+            </tr>
+            <tr>
+              <th rowspan="2">か行</th>
+              <th>か</th>
+              <th>き</th>
+              <th>く</th>
+              <th>け</th>
+              <th>こ</th>
+            </tr>
+            <tr>
+              <td>加</td>
+              <td>幾</td>
+              <td>久</td>
+              <td>計</td>
+              <td>己</td>
+            </tr>
+            <tr>
+              <th rowspan="2">さ行</th>
+              <th>さ</th>
+              <th>し</th>
+              <th>す</th>
+              <th>せ</th>
+              <th>そ</th>
+            </tr>
+            <tr>
+              <td>左</td>
+              <td>之</td>
+              <td>寸</td>
+              <td>世</td>
+              <td>曽</td>
+            </tr>
+            <tr>
+              <th rowspan="2">た行</th>
+              <th>た</th>
+              <th>ち</th>
+              <th>つ</th>
+              <th>て</th>
+              <th>と</th>
+            </tr>
+            <tr>
+              <td>太</td>
+              <td>知</td>
+              <td>川</td>
+              <td>天</td>
+              <td>止</td>
+            </tr>
+            <tr>
+              <th rowspan="2">な行</th>
+              <th>な</th>
+              <th>に</th>
+              <th>ぬ</th>
+              <th>ね</th>
+              <th>の</th>
+            </tr>
+            <tr>
+              <td>奈</td>
+              <td>仁</td>
+              <td>奴</td>
+              <td>祢</td>
+              <td>乃</td>
+            </tr>
+            <tr>
+              <th rowspan="2">は行</th>
+              <th>は</th>
+              <th>ひ</th>
+              <th>ふ</th>
+              <th>へ</th>
+              <th>ほ</th>
+            </tr>
+            <tr>
+              <td>波</td>
+              <td>比</td>
+              <td>不</td>
+              <td>部</td>
+              <td>保</td>
+            </tr>
+            <tr>
+              <th rowspan="2">ま行</th>
+              <th>ま</th>
+              <th>み</th>
+              <th>む</th>
+              <th>め</th>
+              <th>も</th>
+            </tr>
+            <tr>
+              <td>末</td>
+              <td>美</td>
+              <td>武</td>
+              <td>女</td>
+              <td>毛</td>
+            </tr>
+            <tr>
+              <th rowspan="2">や行</th>
+              <th>や</th>
+              <th class="bg-grey">(い)</th>
+              <th>ゆ</th>
+              <th class="bg-grey">(え)</th>
+              <th>よ</th>
+            </tr>
+            <tr>
+              <td>也</td>
+              <td class="bg-grey"></td>
+              <td>由</td>
+              <td class="bg-grey"></td>
+              <td>与</td>
+            </tr>
+            <tr>
+              <th rowspan="2">ら行</th>
+              <th>ら</th>
+              <th>り</th>
+              <th>る</th>
+              <th>れ</th>
+              <th>ろ</th>
+            </tr>
+            <tr>
+              <td>良</td>
+              <td>利</td>
+              <td>留</td>
+              <td>礼</td>
+              <td>呂</td>
+            </tr>
+            <tr>
+              <th rowspan="2">わ行</th>
+              <th>わ</th>
+              <th class="bg-grey">(い)</th>
+              <th class="bg-grey">(う)</th>
+              <th class="bg-grey">(え)</th>
+              <th>を</th>
+            </tr>
+            <tr>
+              <td>和</td>
+              <td class="bg-grey"></td>
+              <td class="bg-grey"></td>
+              <td class="bg-grey"></td>
+              <td>遠</td>
+            </tr>
+            <tr>
+              <th rowspan="2">&nbsp;</th>
+              <th colspan="5">ん</th>
+            </tr>
+            <tr>
+              <td colspan="5">无</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>如果有興趣了解漢字如何演變成平假名，可以參考以下圖片。</p>
+        <a
+          href="img/hiragana_origin.png"
+          data-lightbox="hiragana-gallery"
+          data-title="平假名漢字"
+        >
+          <img
+            id="image_2"
+            src="img/hiragana_origin.png"
+            class="image"
+            alt="平假名漢字"
+          />
+          <label for="image_2">平假名漢字</label>
+        </a>
+      </div>
+    </div>
+    <a id="back_to_top" class="to_top_container" href="#top">
+      <i class="fa-solid fa-caret-up"></i>
+      <div class="text">置頂</div>
+    </a>
+    <footer class="footer">
+      <p>Ng Hoi Lam Kaylyn &copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/hiragana.js"></script>
+  </body>
+</html>

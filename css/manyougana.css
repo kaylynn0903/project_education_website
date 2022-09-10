@@ -1,0 +1,50 @@
+.main_container {
+  position: relative;
+}
+
+.image {
+  width: 200px;
+}
+
+.question_img {
+  position: absolute;
+  top: 210px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.sub_container {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.manyogana_table {
+  margin: auto;
+  text-align: center;
+  border: 1px dashed green;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.manyogana_table th,
+.manyogana_table td {
+  padding: 3px 20px;
+  border: 1px dashed green;
+  vertical-align: top;
+}
+
+.manyogana_table th {
+  background-color: #a2b38b;
+  color: #ffffff;
+}
+
+.manyogana_table tr:nth-child(odd) {
+  background-color: #d5e0c7;
+}
+
+@media (max-width: 768px) {
+  .manyogana_table {
+    width: 100%;
+  }
+}

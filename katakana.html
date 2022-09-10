@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="這是一個讓香港中小學生能夠簡單認識日語歷史的網站"
+    />
+    <meta name="author" content="Ng Hoi Lam, Kaylyn" />
+    <meta
+      name="keywords"
+      content="日語, 歷史, 日語歷史, 漢字, 平假名, 片假名, Japanese, Language, Beginner, JLPT, History, Kanji, Hiragana, Katakana"
+    />
+    <title>認識片假名</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="css/global.css" />
+    <link type="text/css" rel="stylesheet" href="css/katakana.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header_img">
+      <div class="header_title">
+        <h1>認識日語歷史</h1>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+        </li>
+        <li>
+          <a href="overview.html"
+            ><i class="fa-solid fa-book"></i>日語歷史由來</a
+          >
+        </li>
+        <li id="current">
+          <a href="manyougana.html"><i class="fa-solid fa-star"></i>日語假名</a>
+          <ul class="dropdown">
+            <li><a href="manyougana.html">萬葉假名</a></li>
+            <li><a href="hiragana.html">平假名</a></li>
+            <li><a href="katakana.html">片假名</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+        </li>
+        <li>
+          <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+        </li>
+        <li>
+          <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      id="navbar_button_mobile"
+      class="navbar_button_mobile"
+      onclick="onclickNavbarButton()"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div
+      id="navbar_button_close_mobile"
+      class="navbar_button_close_mobile"
+      onclick="onclickNavbarButtonClose()"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="navbar_mobile" class="navbar_mobile">
+      <a href="index.html"><i class="fa-solid fa-house-chimney"></i>主頁</a>
+      <a href="overview.html"><i class="fa-solid fa-book"></i>日語歷史由來</a>
+      <a href="manyougana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 萬葉假名</a
+      >
+      <a href="hiragana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 平假名</a
+      >
+      <a id="current" href="katakana.html"
+        ><i class="fa-solid fa-star"></i>日語假名 - 片假名</a
+      >
+      <a href="kanji.html"><i class="fa-solid fa-star"></i>漢字</a>
+      <a href="quiz.html"><i class="fa-solid fa-pencil"></i>小測驗</a>
+      <a href="resource.html"><i class="fa-solid fa-link"></i>相關連結</a>
+    </div>
+    <div class="main_container">
+      <div class="content">
+        <h2>片假名</h2>
+        <a
+          href="img/katakana_full.jpg"
+          data-lightbox="katakana-gallery"
+          data-title="片假名"
+        >
+          <img
+            id="image_1"
+            src="img/katakana_full.jpg"
+            class="image"
+            alt="片假名"
+          />
+          <label for="image_1">片假名</label>
+        </a>
+        <div class="katakana">
+          <p>
+            古日本既然有了漢字幫助發展成萬葉假名，為甚麼後來慢慢又發展出片假名呢？其實答案很簡單，就是寫漢字很繁瑣！
+          </p>
+          <p>
+            在古時日本與中國大陸的交流頻繁，大量古中國典籍由中國大陸進入日本。因當時中國盛行佛教，大量佛教經文同時傳入日本。日本僧侶為了了解佛學，會閱讀佛教經文。但學習大量漢字又過於耕深，所以他們把一部分的漢字以漢字楷書或部首的方式簡化成片假名來<a
+              href="kanji.html#kunyomi"
+              >訓讀漢字</a
+            >，以利閱讀。
+          </p>
+          <p>
+            隨時代變遷，片假名與平假名共用經過多個時期，片假名最終於明治時期由政府編定五十音。在現代日語，片假名主要用來標示外來語。
+          </p>
+        </div>
+        <img class="line" src="img/line_spring4.png" alt="divider line" />
+        <table class="katakana_table">
+          <caption class="table_title">
+            片假名一覽
+          </caption>
+          <tbody>
+            <tr>
+              <th></th>
+              <th>ア段</th>
+              <th>イ段</th>
+              <th>ウ段</th>
+              <th>エ段</th>
+              <th>オ段</th>
+            </tr>
+            <tr>
+              <th rowspan="2">ア行</th>
+              <th>あ</th>
+              <th>イ</th>
+              <th>ウ</th>
+              <th>エ</th>
+              <th>オ</th>
+            </tr>
+            <tr>
+              <td>阿</td>
+              <td>伊</td>
+              <td>宇</td>
+              <td>江</td>
+              <td>於</td>
+            </tr>
+            <tr>
+              <th rowspan="2">カ行</th>
+              <th>カ</th>
+              <th>キ</th>
+              <th>ク</th>
+              <th>ケ</th>
+              <th>コ</th>
+            </tr>
+            <tr>
+              <td>加</td>
+              <td>幾</td>
+              <td>久</td>
+              <td>介</td>
+              <td>己</td>
+            </tr>
+            <tr>
+              <th rowspan="2">サ行</th>
+              <th>サ</th>
+              <th>シ</th>
+              <th>ス</th>
+              <th>セ</th>
+              <th>ソ</th>
+            </tr>
+            <tr>
+              <td>散</td>
+              <td>之</td>
+              <td>須</td>
+              <td>世</td>
+              <td>曽</td>
+            </tr>
+            <tr>
+              <th rowspan="2">タ行</th>
+              <th>タ</th>
+              <th>チ</th>
+              <th>ツ</th>
+              <th>テ</th>
+              <th>ト</th>
+            </tr>
+            <tr>
+              <td>多</td>
+              <td>千</td>
+              <td>川</td>
+              <td>天</td>
+              <td>止</td>
+            </tr>
+            <tr>
+              <th rowspan="2">ナ行</th>
+              <th>ナ</th>
+              <th>ニ</th>
+              <th>ヌ</th>
+              <th>ネ</th>
+              <th>ノ</th>
+            </tr>
+            <tr>
+              <td>奈</td>
+              <td>仁</td>
+              <td>奴</td>
+              <td>祢</td>
+              <td>乃</td>
+            </tr>
+            <tr>
+              <th rowspan="2">ハ行</th>
+              <th>ハ</th>
+              <th>ヒ</th>
+              <th>フ</th>
+              <th>ヘ</th>
+              <th>ホ</th>
+            </tr>
+            <tr>
+              <td>八</td>
+              <td>比</td>
+              <td>不</td>
+              <td>部</td>
+              <td>保</td>
+            </tr>
+            <tr>
+              <th rowspan="2">マ行</th>
+              <th>マ</th>
+              <th>ミ</th>
+              <th>ム</th>
+              <th>メ</th>
+              <th>モ</th>
+            </tr>
+            <tr>
+              <td>末</td>
+              <td>三</td>
+              <td>牟</td>
+              <td>女</td>
+              <td>毛</td>
+            </tr>
+            <tr>
+              <th rowspan="2">ヤ行</th>
+              <th>ヤ</th>
+              <th class="bg-grey">(い)</th>
+              <th>ユ</th>
+              <th class="bg-grey">(え)</th>
+              <th>ヨ</th>
+            </tr>
+            <tr>
+              <td>也</td>
+              <td class="bg-grey"></td>
+              <td>由</td>
+              <td class="bg-grey"></td>
+              <td>與</td>
+            </tr>
+            <tr>
+              <th rowspan="2">ラ行</th>
+              <th>ラ</th>
+              <th>リ</th>
+              <th>ル</th>
+              <th>レ</th>
+              <th>ロ</th>
+            </tr>
+            <tr>
+              <td>良</td>
+              <td>利</td>
+              <td>流</td>
+              <td>礼</td>
+              <td>呂</td>
+            </tr>
+            <tr>
+              <th rowspan="2">ワ行</th>
+              <th>ワ</th>
+              <th class="bg-grey">(い)</th>
+              <th class="bg-grey">(う)</th>
+              <th class="bg-grey">(え)</th>
+              <th>ヲ</th>
+            </tr>
+            <tr>
+              <td>和</td>
+              <td class="bg-grey"></td>
+              <td class="bg-grey"></td>
+              <td class="bg-grey"></td>
+              <td>乎</td>
+            </tr>
+            <tr>
+              <th rowspan="2">&nbsp;</th>
+              <th colspan="5">ン</th>
+            </tr>
+            <tr>
+              <td colspan="5">尓</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>如果有興趣了解漢字如何演變成片假名，可以參考以下圖片。</p>
+        <a
+          href="img/katakana_kanji.png"
+          data-lightbox="katakana-gallery"
+          data-title="片假名漢字"
+        >
+          <img
+            id="image_1"
+            src="img/katakana_kanji.png"
+            class="image"
+            alt="片假名漢字"
+          />
+          <label for="image_1">片假名漢字</label>
+        </a>
+      </div>
+    </div>
+    <a id="back_to_top" class="to_top_container" href="#top">
+      <i class="fa-solid fa-caret-up"></i>
+      <div class="text">置頂</div>
+    </a>
+    <footer class="footer">
+      <p>Ng Hoi Lam Kaylyn &copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/katakana.js"></script>
+  </body>
+</html>

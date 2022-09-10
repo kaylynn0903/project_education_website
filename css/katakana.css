@@ -1,0 +1,38 @@
+.katakana_table {
+  margin: auto;
+  text-align: center;
+  border: 1px dashed green;
+  border-collapse: collapse;
+}
+
+.katakana_table tr:nth-child(even) {
+  background-color: #d5e0c7;
+}
+
+.katakana_table tr:first-child,
+.katakana_table tr:nth-child(even) th:first-child {
+  background-color: #a2b38b;
+}
+
+.katakana_table th,
+.katakana_table td {
+  padding: 3px 20px;
+  border: 1px dashed green;
+  vertical-align: top;
+}
+
+.katakana_table tr:first-child th,
+.katakana_table tr:not(tr:first-child) th:first-child {
+  color: #ffffff;
+}
+
+.bg-grey {
+  background-color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .katakana_table th,
+  .katakana_table td {
+    padding: 3px 10px;
+  }
+}

@@ -1,0 +1,9 @@
+header,
+nav,
+img,
+footer,
+.navbar_button_mobile,
+.navbar_button_close_mobile,
+.to_top_container {
+  display: none;
+}
