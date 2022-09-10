@@ -226,7 +226,7 @@ body {
 
 .to_top_container .text {
   position: absolute;
-  width: fit-content;
+  width: max-content;
   bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
